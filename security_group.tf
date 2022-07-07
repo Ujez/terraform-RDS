@@ -25,7 +25,7 @@ resource "aws_security_group" "allow-levelup-ssh" {
 #Security Group for MariaDB 
 resource "aws_security_group" "allow-mariaDB" {
   vpc_id      = aws_vpc.levelupvpc.id
-  name        = "allow-levelup-ssh"
+  name        = "allow-mariaDB"
   description = "security group for mariaDB"
 
   egress {
