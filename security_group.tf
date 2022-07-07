@@ -39,7 +39,7 @@ resource "aws_security_group" "allow-mariaDB" {
     from_port       = 3306
     to_port         = 3306
     protocol        = "tcp"
-    security_groups = [aws_security_group.allow-levelup-ssh]
+    security_groups = [aws_security_group.allow-levelup-ssh.id]
   }
 
   tags = {
