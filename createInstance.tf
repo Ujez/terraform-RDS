@@ -31,5 +31,5 @@ resource "aws_instance" "levelup-mariadb" {
 }
 
 output "public_ip" {
-  value = aws_instance.CustomInstance.public_ip
+  value = aws_instance.levelup-mariadb.public_ip
 }
